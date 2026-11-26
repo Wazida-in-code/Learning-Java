@@ -15,15 +15,20 @@ public class Pattern {
         }
 
         int decimal = 97;
-        char value = (char) decimal;
+        char value = (char) decimal; // print alphabet
         // System.out.println(value);
-        for(int c=1; c <= 5; c++){
-            for(int b=1; b <= c; b++){
-                value = (char) (decimal + b - 1);
+        for (int e = 1; e <= 5; e++){   //outer loop
+            for (int t = 1; t <= e; t++){   // inner loop
+                value = (char) (decimal + t - 1);  // 97 + t - 1
                 System.out.print(" " + value);
-                System.out.print(" " + decimal);
-                System.out.print(" " +b);
-                System.out.print("----------");
+            }
+            System.out.println();
+        }
+            System.out.println("----------");
+        for (int e = 1; e <= 5; e++){   //outer loop
+            for (int t = 1; t <= e; t++){   // inner loop
+                value = (char) (decimal + e - 1);  // 97 + e - 1
+                System.out.print(" " + value);
             }
             System.out.println();
         }
