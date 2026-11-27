@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Pattern {
     public static void main(String[] args){
         for (int i = 0; i<5; i++){
@@ -61,7 +63,24 @@ public class Pattern {
 
         for(int i=1; i <= 5; i++){
             for(int j=1; j <= i; j++){
-                System.out.print(" " + cellNumber++);
+                // System.out.print(" " + cellNumber++);
+            }
+            // System.out.println();
+        }
+
+
+        int n;
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter any number: ");
+        n = input.nextInt();
+        for(int r=0; r < n; r++){
+            for(int c=0; c < n; c++){
+                if(r == c|| r+c+1 == n){
+                    System.out.print("X");
+                }else{
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
