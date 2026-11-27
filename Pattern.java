@@ -36,12 +36,12 @@ public class Pattern {
 
         for(int a = 1; a <= 5; a++){
             for(int b=1; b <= a; b++){
-                System.out.print(" " + b);
+                // System.out.print(" " + b);
             }
-            System.out.println();
+            // System.out.println();
         }
 
-        System.out.println("---------------->");
+        // System.out.println("---------------->");
 
         // 1 2 3 4 5
         // 1 2 3 4
@@ -51,9 +51,20 @@ public class Pattern {
 
         for(int a = 5; a >= 1; a--){
             for(int b = 1; b <= a; b++){
-                System.out.print(" " + b);
+                // System.out.print(" " + b);
+            }
+            // System.out.println();
+        }
+
+
+        int cellNumber = 1;
+
+        for(int i=1; i <= 5; i++){
+            for(int j=1; j <= i; j++){
+                System.out.print(" " + cellNumber++);
             }
             System.out.println();
         }
+
     }
 }
